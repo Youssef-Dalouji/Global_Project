@@ -1,0 +1,151 @@
+/*-------------------------Authentification--------------------------*/
+.Principale{
+    background-image: url('../img/pexels-lucas-pezeta-1926335.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Authentification-form{
+        width: 50vw;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50vh;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.5px);
+        -webkit-backdrop-filter: blur(3.5px);
+        border: 1px solid rgba(255, 255, 255, 0.19);
+        .tiger-logo{
+            img{
+                height: 30rem;
+            }
+        }
+        .form-content{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            .Email-form,.Password-form{
+                padding: 1rem 1rem 1rem 0.5rem;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                border-radius: 0.3rem;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+            h1{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                color: rgb(255, 187, 0);
+            }
+            .Sign-in{
+                margin-top:1.2rem ;
+                padding: 0.7rem 0rem;
+                border-radius: 0.3rem;
+                border: none;
+                background-color: #0046FF;
+                color: #fff;
+                &:hover{
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    background-color: #1f5bff;
+                }
+            }
+            .para-info{
+                margin-top:1.5rem ;
+                color: #000;
+                a{
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    .Principale{
+        .Authentification-form{
+            width: 50vw; //change from 50 to 60
+            .tiger-logo{
+                img{
+                    height: 26rem; //change from 30 to 26
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .Principale{
+        .Authentification-form{
+            width: 70vw; // from 50 to 65
+            .tiger-logo{
+                img{
+                    height: 25rem; // from 30 to 25
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .Principale{
+        .Authentification-form{
+            width: 95vw; //change from 50 to 60
+            .tiger-logo{
+                img{
+                    height: 24rem; //change from 30 to 26
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:542px) {
+    .Principale{
+        .Authentification-form{
+            width: 80vw; 
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 75vh;
+            .tiger-logo{
+                img{
+                    height: 15rem; 
+                }
+            }
+            .form-content{
+                .Email-form,.Password-form,.fullname-form{
+                    padding: 0.5rem;
+                    font-size: 1.5rem;
+                }
+                h1{
+                    font-size: 2.5rem;
+                }
+                .Sign-in{
+                    padding: 0.5rem 0rem;
+                }
+                .para-info{
+                    margin-top:1.3rem ;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:329px) {
+    .Principale{
+        .Authentification-form{
+            width: 94vw; //change from 50 to 60
+            .tiger-logo{
+                img{
+                    height: 15rem; //change from 30 to 26
+                }
+            }
+        }
+    }
+}

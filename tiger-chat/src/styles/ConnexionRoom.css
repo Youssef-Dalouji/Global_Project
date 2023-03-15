@@ -1,0 +1,187 @@
+/*-------------------------Connexion Room--------------------------*/
+.Principale {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex: 1 1 auto;
+  margin: 0 auto;
+  background-image: url("../img/pexels-george-desipris-792381.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Principale .Room-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
+.Principale .Room-selection .tigeLogo-and-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  margin: 0 auto;
+}
+.Principale .Room-selection .tigeLogo-and-title img {
+  height: 15rem;
+}
+.Principale .Room-selection .tigeLogo-and-title h1 {
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#000, #000, orange, orange, orange, orange, orange, orange, #000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Principale .Room-selection .GenerateE .generateIdRoomM {
+  padding: 1rem 1rem 1rem 0.7rem;
+  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  margin: 1rem 0rem;
+  border: none;
+  width: 20vw;
+  font-size: 2rem;
+}
+.Principale .Room-selection .GenerateE .generateIdRoomM:focus {
+  outline: none;
+}
+.Principale .Room-selection .createRoom {
+  padding: 1rem 0rem;
+  background-color: rgb(211, 137, 0);
+  color: #000;
+  border-radius: 0.2rem;
+  width: 20vw;
+  margin: 0rem auto 1rem auto;
+}
+.Principale .Room-selection .createRoom:hover {
+  transition: all 1s;
+  background-color: rgb(212, 154, 46);
+  color: #000;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Principale .Room-selection {
+    width: 70vw !important;
+  }
+  .Principale .Room-selection .nameRoom {
+    width: 27vw !important;
+  }
+  .Principale .Room-selection .GenerateE .generateIdRoomM {
+    width: 27vw !important;
+  }
+  .Principale .Room-selection .Generate .generateIdRoom {
+    width: 21vw !important;
+  }
+  .Principale .Room-selection .Generate button {
+    width: 6vw !important;
+  }
+  .Principale .Room-selection .createRoom {
+    width: 27vw !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Principale .Room-selection {
+    width: 70vw !important;
+  }
+  .Principale .Room-selection .nameRoom {
+    width: 35vw !important;
+    font-size: 1.9rem !important;
+  }
+  .Principale .Room-selection .GenerateE .generateIdRoomM {
+    width: 35vw !important;
+  }
+  .Principale .Room-selection .Generate .generateIdRoom {
+    width: 27vw !important;
+  }
+  .Principale .Room-selection .Generate button {
+    width: 8vw !important;
+  }
+  .Principale .Room-selection .createRoom {
+    width: 35vw !important;
+  }
+}
+@media screen and (max-width: 542px) {
+  .Principale .Room-selection {
+    width: 75vw !important;
+  }
+  .Principale .Room-selection .nameRoom {
+    width: 45vw !important;
+  }
+  .Principale .Room-selection .GenerateE .generateIdRoomM {
+    width: 45vw !important;
+  }
+  .Principale .Room-selection .Generate .generateIdRoom {
+    width: 30vw !important;
+  }
+  .Principale .Room-selection .Generate button {
+    width: 15vw !important;
+  }
+  .Principale .Room-selection .createRoom {
+    width: 45vw !important;
+  }
+}
+@media screen and (max-width: 429px) {
+  .Principale .Room-selection {
+    width: 85vw !important;
+  }
+  .Principale .Room-selection .nameRoom {
+    width: 60vw !important;
+  }
+  .Principale .Room-selection .GenerateE .generateIdRoomM {
+    width: 60vw !important;
+  }
+  .Principale .Room-selection .Generate .generateIdRoom {
+    width: 40vw !important;
+  }
+  .Principale .Room-selection .Generate button {
+    width: 20vw !important;
+  }
+  .Principale .Room-selection .createRoom {
+    width: 60vw !important;
+  }
+}
+@media screen and (max-width: 329px) {
+  .Principale .Room-selection {
+    width: 95vw !important;
+  }
+  .Principale .Room-selection .tigeLogo-and-title h1 {
+    font-size: 2.8rem !important;
+  }
+  .Principale .Room-selection .nameRoom {
+    width: 65vw !important;
+    font-size: 1.6rem !important;
+  }
+  .Principale .Room-selection .GenerateE .generateIdRoomM {
+    width: 65vw !important;
+  }
+  .Principale .Room-selection .Generate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .Principale .Room-selection .Generate .generateIdRoom {
+    width: 45vw !important;
+    font-size: 1.5rem !important;
+  }
+  .Principale .Room-selection .Generate button {
+    width: 20vw !important;
+    padding: 0.7rem 0rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .Principale .Room-selection .createRoom {
+    width: 65vw !important;
+  }
+}/*# sourceMappingURL=ConnexionRoom.css.map */

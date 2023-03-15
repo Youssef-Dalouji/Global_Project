@@ -1,0 +1,128 @@
+/*-------------------------Authentification--------------------------*/
+.Principale {
+  background-image: url("../img/pexels-lucas-pezeta-1926335.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Principale .Authentification-form {
+  width: 50vw;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
+.Principale .Authentification-form .tiger-logo img {
+  height: 30rem;
+}
+.Principale .Authentification-form .form-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.Principale .Authentification-form .form-content .Email-form, .Principale .Authentification-form .form-content .Password-form {
+  padding: 1rem 1rem 1rem 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+.Principale .Authentification-form .form-content .Email-form:focus, .Principale .Authentification-form .form-content .Password-form:focus {
+  outline: none;
+}
+.Principale .Authentification-form .form-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: rgb(255, 187, 0);
+}
+.Principale .Authentification-form .form-content .Sign-in {
+  margin-top: 1.2rem;
+  padding: 0.7rem 0rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #0046FF;
+  color: #fff;
+}
+.Principale .Authentification-form .form-content .Sign-in:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #1f5bff;
+}
+.Principale .Authentification-form .form-content .para-info {
+  margin-top: 1.5rem;
+  color: #000;
+}
+.Principale .Authentification-form .form-content .para-info a {
+  color: orange;
+}
+
+@media screen and (min-width: 1024px) {
+  .Principale .Authentification-form {
+    width: 50vw;
+  }
+  .Principale .Authentification-form .tiger-logo img {
+    height: 26rem;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Principale .Authentification-form {
+    width: 70vw;
+  }
+  .Principale .Authentification-form .tiger-logo img {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Principale .Authentification-form {
+    width: 95vw;
+  }
+  .Principale .Authentification-form .tiger-logo img {
+    height: 24rem;
+  }
+}
+@media screen and (max-width: 542px) {
+  .Principale .Authentification-form {
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+  }
+  .Principale .Authentification-form .tiger-logo img {
+    height: 15rem;
+  }
+  .Principale .Authentification-form .form-content .Email-form, .Principale .Authentification-form .form-content .Password-form, .Principale .Authentification-form .form-content .fullname-form {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .Principale .Authentification-form .form-content h1 {
+    font-size: 2.5rem;
+  }
+  .Principale .Authentification-form .form-content .Sign-in {
+    padding: 0.5rem 0rem;
+  }
+  .Principale .Authentification-form .form-content .para-info {
+    margin-top: 1.3rem;
+  }
+}
+@media screen and (max-width: 329px) {
+  .Principale .Authentification-form {
+    width: 94vw;
+  }
+  .Principale .Authentification-form .tiger-logo img {
+    height: 15rem;
+  }
+}/*# sourceMappingURL=Authentification.css.map */

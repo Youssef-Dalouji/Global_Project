@@ -1,0 +1,392 @@
+/*-----------------------Chat Online-----------------------*/
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  background-image: url("../img/pexels-deep-rajwar-3985635.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main .chatOnlineMain {
+  display: flex;
+  flex-direction: column;
+}
+.main .chatOnlineMain .contentChat {
+  overflow-y: scroll;
+  margin-top: 2rem;
+  height: 85vh;
+  width: 65vw;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  padding: 1rem;
+}
+.main .chatOnlineMain .contentChat h1 {
+  text-align: center;
+}
+.main .chatOnlineMain .contentChat .they {
+  margin-top: 1.3rem;
+  width: 43%;
+  word-wrap: break-word;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  padding: 0.5rem;
+  background-color: orange;
+  color: #000;
+  border-radius: 5px;
+}
+.main .chatOnlineMain .contentChat .they .time-message {
+  text-align: right;
+  font-size: 1.2rem;
+}
+.main .chatOnlineMain .contentChat .they .body-message {
+  margin: 1rem 0rem;
+}
+.main .chatOnlineMain .contentChat .they .name-user {
+  font-size: 1.2rem;
+}
+.main .chatOnlineMain .contentChat .me {
+  margin-top: 1.3rem;
+  width: 43%;
+  margin-left: 58%;
+  word-wrap: break-word;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+.main .chatOnlineMain .contentChat .me .time-message {
+  text-align: right;
+  font-size: 1.2rem;
+}
+.main .chatOnlineMain .contentChat .me .body-message {
+  margin: 1rem 0rem;
+}
+.main .chatOnlineMain .contentChat .me .name-user {
+  font-size: 1.2rem;
+}
+.main .chatOnlineMain .tapANDsend .envoyerChat {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 0px 0px 5px 5px;
+  border: none;
+}
+.main .chatOnlineMain .tapANDsend .envoyerChat:focus {
+  outline: none;
+}
+.main .buttonSideMenumaximiser {
+  border: 2px solid black;
+  height: 8vh;
+  width: 7%;
+  display: none;
+  background-color: orange;
+  border-radius: 2rem 0rem 0rem 2rem;
+  position: absolute;
+  right: 0;
+  top: 40vh;
+  cursor: pointer;
+}
+.main .buttonSideMenumaximiser .maximiser {
+  width: 100%;
+  height: 100%;
+}
+.main .SideMenuInformation {
+  margin-top: 2rem;
+  width: 25vw;
+  height: calc(85vh + 45.94px);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  text-align: center;
+}
+.main .SideMenuInformation .buttonSideMenuminimiser {
+  border: 2px solid black;
+  height: 8vh;
+  width: 30%;
+  display: none;
+  background-color: orange;
+  border-radius: 2rem 0rem 0rem 2rem;
+  position: absolute;
+  right: 25vw;
+  top: 40vh;
+  cursor: pointer;
+}
+.main .SideMenuInformation .buttonSideMenuminimiser .minimiser {
+  width: 100%;
+  height: 100%;
+}
+.main .SideMenuInformation h3 {
+  font-size: 1.7rem;
+}
+.main .SideMenuInformation .List-participant {
+  overflow-y: scroll;
+  height: 40%;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.main .SideMenuInformation .List-participant div {
+  padding: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(255, 136, 0, 0.664);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.main .SideMenuInformation .List-participant div .nameUserList {
+  width: 75%;
+  text-align: center;
+}
+.main .SideMenuInformation .List-participant div .Tconnect, .main .SideMenuInformation .List-participant div .Fconnect {
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+}
+.main .SideMenuInformation .List-participant div .Tconnect {
+  background-color: rgb(0, 214, 0);
+}
+.main .SideMenuInformation .List-participant div .Fconnect {
+  background-color: red;
+}
+.main .SideMenuInformation .Info-Room-and-User {
+  text-align: center;
+  height: 50%;
+}
+.main .SideMenuInformation .Info-Room-and-User img {
+  height: 10rem;
+}
+.main .SideMenuInformation .Info-Room-and-User .RoomChat {
+  font-size: 2.7rem;
+  background: -webkit-linear-gradient(#000, #000, orange, orange, orange, #000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .SideMenuInformation .Info-Room-and-User .sup-info-room {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 3.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 136, 0, 0.664);
+  border-radius: 5px;
+}
+.main .SideMenuInformation .Info-Room-and-User .sup-info-room div {
+  display: flex;
+  align-items: center;
+}
+.main .SideMenuInformation .Info-Room-and-User .sup-info-room div h3 {
+  font-size: 1.7rem;
+  width: 45%;
+}
+.main .SideMenuInformation .Info-Room-and-User .sup-info-room div span {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: rgb(51, 33, 0);
+}
+
+@media screen and (max-width: 1116px) {
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div h3 {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div span {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1088px) {
+  .main .chatOnlineMain .contentChat {
+    width: 85vw;
+  }
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem;
+  }
+  .main .buttonSideMenumaximiser {
+    display: block;
+  }
+  .main .SideMenuInformation {
+    width: 35vw;
+    display: none;
+    position: absolute;
+    right: 0;
+  }
+  .main .SideMenuInformation .buttonSideMenuminimiser {
+    right: 35vw;
+    height: 8vh;
+    width: 20%;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div h3 {
+    font-size: 1.7rem;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div span {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 935px) {
+  .main .chatOnlineMain .contentChat {
+    width: 85vw;
+  }
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem !important;
+  }
+  .main .SideMenuInformation {
+    width: 40vw;
+  }
+  .main .SideMenuInformation .buttonSideMenuminimiser {
+    right: 40vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main .chatOnlineMain .contentChat {
+    width: 88vw;
+  }
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem;
+  }
+  .main .buttonSideMenumaximiser {
+    display: block;
+  }
+  .main .SideMenuInformation {
+    width: 45vw;
+    display: none;
+    position: absolute;
+    right: 0;
+  }
+  .main .SideMenuInformation .buttonSideMenuminimiser {
+    right: 45vw;
+    height: 8vh;
+    width: 20%;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div h3 {
+    font-size: 1.7rem;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div span {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 728px) {
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem;
+  }
+  .main .buttonSideMenumaximiser {
+    height: 10vh;
+    width: 9%;
+    text-align: center;
+  }
+  .main .buttonSideMenumaximiser .maximiser {
+    width: 70%;
+  }
+  .main .SideMenuInformation {
+    width: 55vw;
+  }
+  .main .SideMenuInformation .buttonSideMenuminimiser {
+    right: 55vw;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div h3 {
+    font-size: 1.3rem;
+  }
+  .main .SideMenuInformation .Info-Room-and-User .sup-info-room div span {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 596px) {
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem;
+  }
+  .main .buttonSideMenumaximiser {
+    height: 10vh;
+    width: 9%;
+    text-align: center;
+  }
+  .main .buttonSideMenumaximiser .maximiser {
+    width: 70%;
+  }
+  .main .SideMenuInformation {
+    width: 85vw;
+  }
+  .main .SideMenuInformation .buttonSideMenuminimiser {
+    right: 85vw;
+  }
+}
+@media screen and (max-width: 387px) {
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem;
+  }
+  .main .buttonSideMenumaximiser {
+    height: 10vh;
+    width: 12%;
+    text-align: center;
+  }
+  .main .buttonSideMenumaximiser .maximiser {
+    width: 70%;
+  }
+  .main .SideMenuInformation {
+    width: 80vw;
+  }
+  .main .SideMenuInformation .buttonSideMenuminimiser {
+    right: 80vw;
+  }
+  .main .SideMenuInformation .List-participant div .nameUserList {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 310px) {
+  .main .chatOnlineMain .contentChat {
+    width: 98%;
+  }
+  .main .chatOnlineMain .contentChat h1 {
+    font-size: 1.7rem;
+  }
+  .main .chatOnlineMain .tapANDsend .envoyerChat {
+    width: 98%;
+    font-size: 2rem;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  .main .buttonSideMenumaximiser {
+    height: 10vh;
+    width: 12%;
+    text-align: center;
+  }
+  .main .buttonSideMenumaximiser .maximiser {
+    width: 70%;
+  }
+  .main .SideMenuInformation {
+    width: 85vw;
+  }
+  .main .SideMenuInformation .buttonSideMenuminimiser {
+    right: 85vw;
+  }
+  .main .SideMenuInformation .List-participant div .nameUserList {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=ChatOnline.css.map */

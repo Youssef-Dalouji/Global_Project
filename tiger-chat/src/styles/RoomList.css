@@ -1,0 +1,121 @@
+/*-------------------------Room List----------------------------*/
+.Principale {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex: 1 1 auto;
+  margin: 0 auto;
+  background-image: url("../img/pexels-george-desipris-792381.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Principale .Room-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
+.Principale .Room-selection .tigeLogo-and-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  margin: 0 auto;
+}
+.Principale .Room-selection .tigeLogo-and-title img {
+  height: 15rem;
+}
+.Principale .Room-selection .tigeLogo-and-title h1 {
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#000, #000, orange, orange, orange, #000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Principale .Room-selection .btn1, .Principale .Room-selection .btn2 {
+  border: 2px solid #000;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  padding: 1rem 0rem;
+  background-color: rgb(211, 137, 0);
+  color: #000;
+  border-radius: 0.2rem;
+  width: 20vw;
+  margin: 0rem auto 1rem auto;
+}
+.Principale .Room-selection .btn1:hover, .Principale .Room-selection .btn2:hover {
+  transition: all 1s;
+  background-color: rgb(212, 154, 46);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 958px) {
+  .Principale .Room-selection {
+    width: 60vw;
+  }
+  .Principale .Room-selection .tigeLogo-and-title img {
+    height: 13rem;
+  }
+  .Principale .Room-selection .tigeLogo-and-title h1 {
+    font-size: 3rem;
+  }
+  .Principale .Room-selection .btn1, .Principale .Room-selection .btn2 {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 710px) {
+  .Principale .Room-selection {
+    width: 75vw;
+  }
+  .Principale .Room-selection .tigeLogo-and-title img {
+    height: 14rem;
+  }
+  .Principale .Room-selection .tigeLogo-and-title h1 {
+    font-size: 3.2rem;
+  }
+  .Principale .Room-selection .btn1, .Principale .Room-selection .btn2 {
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Principale .Room-selection {
+    width: 80vw;
+  }
+  .Principale .Room-selection .tigeLogo-and-title img {
+    height: 14rem;
+  }
+  .Principale .Room-selection .tigeLogo-and-title h1 {
+    font-size: 3.2rem;
+  }
+  .Principale .Room-selection .btn1, .Principale .Room-selection .btn2 {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 356px) {
+  .Principale .Room-selection {
+    width: 80vw;
+  }
+  .Principale .Room-selection .tigeLogo-and-title img {
+    height: 11rem;
+  }
+  .Principale .Room-selection .tigeLogo-and-title h1 {
+    font-size: 3rem;
+  }
+  .Principale .Room-selection .btn1, .Principale .Room-selection .btn2 {
+    width: 60vw;
+  }
+}/*# sourceMappingURL=RoomList.css.map */

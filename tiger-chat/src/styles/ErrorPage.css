@@ -1,0 +1,46 @@
+.errorpagemain {
+  background-color: black;
+  color: rgb(255, 166, 0);
+  background-image: url("../img/pexels-lucas-pezeta-1926335.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.errorpagemain .errorpagesquare {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
+.errorpagemain .errorpagesquare .errorpageimg img {
+  height: 20rem;
+}
+.errorpagemain .errorpagesquare .errorpageinfo h1 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 422px) {
+  .errorpagemain .errorpagesquare .errorpageimg img {
+    height: 15rem;
+  }
+  .errorpagemain .errorpagesquare .errorpageinfo h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .errorpagemain .errorpagesquare .errorpageimg img {
+    height: 11rem;
+  }
+  .errorpagemain .errorpagesquare .errorpageinfo h1 {
+    font-size: 1.6rem;
+  }
+}/*# sourceMappingURL=ErrorPage.css.map */

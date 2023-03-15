@@ -1,0 +1,203 @@
+/*-------------------------Room List----------------------------*/
+.Principale{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    background-image: url('../img/pexels-george-desipris-792381.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        .Room-selection{
+            .tigeLogo-and-title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20vw;
+                margin: 0 auto;
+                img{
+                    height: 15rem;
+                }
+                h1{
+                    font-size: 4rem;
+                    background: -webkit-linear-gradient(#000,#000,orange,orange,orange,#000,#000);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            width: 50vw;
+            height: 100vh;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 1px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3.5px);
+            -webkit-backdrop-filter: blur(3.5px);
+            border: 1px solid rgba(255, 255, 255, 0.19);
+            .btn1,.btn2{
+                    border: 2px solid #000;
+                    width: 100%;
+                    color: #000;
+                    text-decoration: none;
+                    padding: 1rem 0rem;
+                    background-color: rgb(211, 137, 0);
+                    color: #000;
+                    border-radius: 0.2rem;
+                    width: 20vw;
+                    margin: 0rem auto 1rem auto;
+                    &:hover{
+                    transition: all 1s;
+                    background-color: rgb(212, 154, 46);
+                    cursor: pointer;
+                    }
+            }
+    }
+}
+
+@media screen and (max-width:958px) {
+    .Principale{
+            .Room-selection{
+                .tigeLogo-and-title{
+                    img{
+                        height: 13rem; //c
+                    }
+                    h1{
+                        font-size: 3rem; //c
+                    }
+                }
+                width: 60vw; //c
+                .btn1,.btn2{
+                        width: 25vw; //c
+                }
+        }
+    }
+}
+@media screen and (max-width:710px) {
+    .Principale{
+            .Room-selection{
+                .tigeLogo-and-title{
+                    img{
+                        height: 14rem; //c
+                    }
+                    h1{
+                        font-size: 3.2rem; //c
+                    }
+                }
+                width: 75vw; //c
+                .btn1,.btn2{
+                        width: 35vw; //c
+                }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .Principale{
+            .Room-selection{
+                .tigeLogo-and-title{
+                    img{
+                        height: 14rem; //c
+                    }
+                    h1{
+                        font-size: 3.2rem; //c
+                    }
+                }
+                width: 80vw; //c
+                .btn1,.btn2{
+                        width: 45vw; //c
+                }
+        }
+    }
+}
+@media screen and (max-width:356px) {
+    .Principale{
+            .Room-selection{
+                .tigeLogo-and-title{
+                    img{
+                        height: 11rem; //c
+                    }
+                    h1{
+                        font-size: 3rem; //c
+                    }
+                }
+                width: 80vw; //c
+                .btn1,.btn2{
+                        width: 60vw; //c
+                }
+        }
+    }
+}
+// @media screen and (min-width:767px) and (max-width:1023px) {
+//     .Principale{
+//         .Authentification-form{
+//             width: 70vw; // from 50 to 65
+//             .tiger-logo{
+//                 img{
+//                     height: 25rem; // from 30 to 25
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media screen and (max-width:767px) {
+//     .Principale{
+//         .Authentification-form{
+//             width: 95vw; //change from 50 to 60
+//             .tiger-logo{
+//                 img{
+//                     height: 24rem; //change from 30 to 26
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media screen and (max-width:542px) {
+//     .Principale{
+//         .Authentification-form{
+//             width: 80vw; 
+//             flex-wrap: wrap;
+//             justify-content: center;
+//             height: 75vh;
+//             .tiger-logo{
+//                 img{
+//                     height: 15rem; 
+//                 }
+//             }
+//             .form-content{
+//                 .Email-form,.Password-form,.fullname-form{
+//                     padding: 0.5rem;
+//                     font-size: 1.5rem;
+//                 }
+//                 h1{
+//                     font-size: 2.5rem;
+//                 }
+//                 .Sign-in{
+//                     padding: 0.5rem 0rem;
+//                 }
+//                 .para-info{
+//                     margin-top:1.3rem ;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media screen and (max-width:329px) {
+//     .Principale{
+//         .Authentification-form{
+//             width: 94vw; //change from 50 to 60
+//             .tiger-logo{
+//                 img{
+//                     height: 15rem; //change from 30 to 26
+//                 }
+//             }
+//         }
+//     }
+// }

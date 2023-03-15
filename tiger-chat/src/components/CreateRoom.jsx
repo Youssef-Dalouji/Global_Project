@@ -23,7 +23,7 @@ const CreateRoom = () => {
     }
     const VerficationRoom = async () => {
       let res = await axios.post(
-        "http://18.118.144.246:5500/room/query",
+        "http://18.219.83.70:5500/room/query",
         { idRoom: idGenerateRoom },
         {
           headers: {
@@ -50,7 +50,7 @@ const CreateRoom = () => {
             ).toString(cryptojs.enc.Utf8);
             const CreateNewRoom = async () => {
               let resultat = await axios.post(
-                "http://18.118.144.246:5500/room/create",
+                "http://18.219.83.70:5500/room/create",
                 { idRoom: idGenerateRoom, name: ndecr, nameRoom: nameRoom },
                 {
                   headers: {

@@ -12,31 +12,31 @@ const ChatOnline=() => {
     const [visibility,setVisibility]=useState(false)
     const iRdecr=cryptojs.AES.decrypt(window.sessionStorage.getItem('idSessionGeneral'),process.env.REACT_APP_PASS_ENCR).toString(cryptojs.enc.Utf8)
     const queryExistRoom=useQuery('findRooms',()=>{
-        return axios.post('http://18.118.144.246:5500/room/query',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+        return axios.post('http://18.219.83.70:5500/room/query',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
     },{
         refetchInterval:1000,
         refetchIntervalInBackground:true
     })
     const queryInformationsRoom=useQuery('GETInformationsRoom',()=>{
-        return axios.post('http://18.118.144.246:5500/room/queryInformationsRoom',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+        return axios.post('http://18.219.83.70:5500/room/queryInformationsRoom',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
     },{
         refetchInterval:1000,
         refetchIntervalInBackground:true
     })
     const queryExistUserInRoom=useQuery('ExistUserInRoom',() => {
-        return axios.post('http://18.118.144.246:5500/room/ConnectRoom',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+        return axios.post('http://18.219.83.70:5500/room/ConnectRoom',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
     },{
         refetchInterval:1000,
         refetchIntervalInBackground:true
     })
     const queryPingUser=useQuery('ExistUserOnLine',() => {
-        return axios.post('http://18.118.144.246:5500/M-1351919175/queryPingConnect',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+        return axios.post('http://18.219.83.70:5500/M-1351919175/queryPingConnect',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
     },{
         refetchInterval:1000,
         refetchIntervalInBackground:true
     })
     const getDataUserChat=useQuery('DataUserChat',() => {
-        return axios.post('http://18.118.144.246:5500/M-1351919175/get',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+        return axios.post('http://18.219.83.70:5500/M-1351919175/get',{idRoom:iRdecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
     },{
         refetchInterval:1000,
         refetchIntervalInBackground:true
@@ -45,7 +45,7 @@ const ChatOnline=() => {
       if(message!==''){
         const ndecr=cryptojs.AES.decrypt(window.sessionStorage.getItem('name'),process.env.REACT_APP_PASS_ENCR).toString(cryptojs.enc.Utf8)
         const SendMsg=async ()=>{
-            let resu=await axios.post('http://18.118.144.246:5500/M-1351919175/create',{message:message,idRoom:iRdecr,name:ndecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+            let resu=await axios.post('http://18.219.83.70:5500/M-1351919175/create',{message:message,idRoom:iRdecr,name:ndecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
             if(resu.status>=200 && resu.status<300){
                 return resu
             }

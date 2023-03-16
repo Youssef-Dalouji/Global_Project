@@ -165,6 +165,8 @@ const ChatOnline=() => {
                 window.location.reload()
             }
         }
+    }else{
+        navigate('/SignIn',{replace:true})
     }
 }
 export default ChatOnline

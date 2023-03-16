@@ -36,7 +36,7 @@ const Registre=() => {
     useEffect(()=>{
         if(verficationChangement){
             const PostUser=async () => {
-                let res =await axios.post('http://3.15.150.75:5500/userRegistre1923',dataUserResgistre)
+                let res =await axios.post('http://3.141.21.101:5500/userRegistre1923',dataUserResgistre)
                 if(res.status>=200 && res.status<300){
                   return res
                 }

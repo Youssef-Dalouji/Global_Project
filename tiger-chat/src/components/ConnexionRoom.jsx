@@ -25,7 +25,7 @@ const ConnexionRoom=() => {
   useEffect(()=>{
     if(verficationChangement){
       const VerficationRoomAndUser=async () => {
-        let res=await axios.post('http://3.12.150.17:5500/room/ConnectRoom',{idRoom:getIdRoomChange},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+        let res=await axios.post('http://3.15.150.75:5500/room/ConnectRoom',{idRoom:getIdRoomChange},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
         if(res.status>=200 && res.status<300){
           return res
         }
@@ -37,7 +37,7 @@ const ConnexionRoom=() => {
           }else{
             const ndecr=cryptojs.AES.decrypt(window.sessionStorage.getItem('name'),process.env.REACT_APP_PASS_ENCR).toString(cryptojs.enc.Utf8)
             const AccessToTheRoom=async () => {
-              let resultat=await axios.post('http://3.12.150.17:5500/room/login',{idRoom:getIdRoomChange,name:ndecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
+              let resultat=await axios.post('http://3.15.150.75:5500/room/login',{idRoom:getIdRoomChange,name:ndecr},{headers:{Authorization:`Bearer ${window.sessionStorage.getItem('idUserSerie')}`}})
               if(resultat.status>=200 && resultat.status<300){
                 return resultat
               }

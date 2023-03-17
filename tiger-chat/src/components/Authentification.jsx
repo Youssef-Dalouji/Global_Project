@@ -11,12 +11,6 @@ const Authentification=() => {
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
   const VerficationAndSend=()=>{
-    if(window.localStorage.getItem('UniqueAthentification')){
-      if(parseInt(window.localStorage.getItem('UniqueAthentification'))===1){
-        swal("Warning", "Can't Sign In more than once", "warning")
-        return true;
-      }
-    }
     if(email==='' || password===''){
       swal("obligatory", "Fields is required", "error")
     }else{
